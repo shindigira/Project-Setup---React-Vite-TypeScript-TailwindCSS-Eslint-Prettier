@@ -1,4 +1,4 @@
-##Project Setup - React, Vite, TypeScript, TailwindCSS, Eslint, Prettier
+## Project Setup - React, Vite, TypeScript, TailwindCSS, Eslint, Prettier
 
 ### Run these commands in a named project folder
 
