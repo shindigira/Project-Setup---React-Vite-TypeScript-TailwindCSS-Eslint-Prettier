@@ -1,4 +1,4 @@
-## Project Setup - React, Vite, TypeScript, TailwindCSS, Eslint, Prettier
+##Project Setup - React, Vite, TypeScript, TailwindCSS, Eslint, Prettier
 
 ### Run these commands in a named project folder
 
@@ -85,9 +85,34 @@ module.exports = {
 
 ```
 
-### Additional Steps
+- Add both a `.eslintignore` and a `.prettierignore` with the following:
+
+```text
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+node_modules/*
+
+```
+
+- Add a `.vscode` directory with a file named `settings.json, include the following:
+
+```js
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  // Runs Prettier, then ESLint
+  "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"]
+}
+```
 
 - Modify the `.gitignore` to add `node_modules`
+
+### Allow Absolute Pathing
+
 - Modify `vite.config.ts` to allow absolute pathing from 'src'
 
 ```js
@@ -155,10 +180,6 @@ module.exports = {
 - Tailwind Documentation (CMD + CTRL + T)
 - Tailwind CSS IntelliSense
 - ESLint
-
-## Optional Items
-
-- Add `eslint-plugin-jsx-a11y`.
 
 ## Reference Materials
 
