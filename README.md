@@ -181,6 +181,11 @@ module.exports = {
 - Tailwind CSS IntelliSense
 - ESLint
 
+## Optional Steps
+
+- add Husky, Lint-Staged, Commitizen for setting up git commit hooks: (Git Commit Hook Guide)[https://medium.com/@imdavidrock/why-should-you-use-commitizen-husky-for-conventional-commit-and-have-unified-lint-41047aad6d]. Will intercept commits to force proper commits
+- Use semantic git commit messages: [Git Commit Semantics](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
+
 ## Reference Materials
 
 - Another's Project Setup (See `package.json`): [Forked Project](https://github.com/shindigira/vite-reactts-eslint-prettier?fbclid=IwAR2TH4lLqcTD_-3Pz7LcPfqRedhygCi8lllUrLukaUgDRa6OmKX1WhDTg68)
