@@ -1,4 +1,4 @@
-##Project Setup - React, Vite, TypeScript, TailwindCSS, Eslint, Prettier
+## Project Setup - React, Vite, TypeScript, TailwindCSS, Eslint, Prettier
 
 ### Run these commands in a named project folder
 
@@ -77,6 +77,7 @@ module.exports = {
 ```js
   "scripts": {
     ...,
+    "lint:dry": "eslint ./src --ext .jsx,.js,.ts,.tsx --ignore-path ./.gitignore",
     "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
     "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
     "lint": "yarn lint:format && yarn lint:fix ",
