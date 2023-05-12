@@ -60,16 +60,16 @@ module.exports = {
 - Modify the `prettier.config.cjs` with the following:
 
 ```js
-{
-  "tabWidth": 2,
-  "semi": true,
-  "singleQuote": false,
-  "trailingComma": "all",
-  "printWidth": 80,
-  "useTabs": false,
-  "endOfLine":"auto",
-  plugins: [require("prettier-plugin-tailwindcss")]
-}
+module.exports = {
+  tabWidth: 2,
+  semi: true,
+  singleQuote: false,
+  trailingComma: "all",
+  printWidth: 80,
+  useTabs: false,
+  endOfLine: "auto",
+  plugins: [require("prettier-plugin-tailwindcss")],
+};
 ```
 
 - Add the below scripts to `package.json`:
