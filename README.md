@@ -117,6 +117,8 @@ node_modules/*
 - Modify `vite.config.ts` to allow absolute pathing from 'src'
 
 ```js
+import path from "path";
+
 export default defineConfig({
   plugins: [react()],
   resolve: {
